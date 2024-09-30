@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-    <h1>TITLE</h1>
-    <h2> Choose Head Line </h2>
-    <button class="heading">Red</button>
-    <button class="heading">Green</button>
-    <button class="heading">Blue</button>
-    <button class="heading">White</button>
-    <button class="heading">Black</button>
-    <h2>Choose Background</h2>
-    <button class="back">Red</button>
-    <button class="back">Green</button>
-    <button class="back">Blue</button>
-    <button class="back">White</button>
-    <button class="back">Black</button>
-    <h2>Choose Action</h2>
-    <button class="action">Hide</button>
-    <button class="action">Fade</button>
-    <button class="action">Slide</button>
-    <button class="action">Opaque</button>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+
+  <!-- Home Section -->
+  <div id="home" class="home-container">
+    <h1>Welcome to Simon Game</h1>
+    <p>
+      Simon is a fun and challenging memory game where players must recall and repeat a series of colored patterns. Each level introduces a new color to the sequence, testing your memory as you strive to beat your best score!
+    </p>
+    <button id="start-btn" class="start-btn">Start Game</button>
+    <button id="rule-btn" class="start-btn">Rules</button>
+  </div>
+  
+  <!-- Rules Section -->
+  <div id="rules" class="rule-container" style="display: none;">
+    <h1>How to Play</h1>
+    <ul class="instructions-list">
+      <li>Press "Start Game" to begin.</li>
+      <li>Watch the sequence of flashing colors.</li>
+      <li>Repeat the sequence by pressing the buttons in the same order.</li>
+      <li>If you succeed, the game will add another color to the sequence.</li>
+      <li>Continue until you make a mistake.</li>
+      <li>If you make a mistake, the game is over, and you can restart.</li>
+    </ul>
+    <button id="back-btn" class="start-btn">Back to Home</button>
+  </div>
+
+  <!-- Game Section -->
+  <div id="game" class="game-container" style="display: none;">
+    <h1 id="level-title">Press A Key to Start</h1>
+    <div class="row">
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
+    </div>
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
 </body>
 </html>
