@@ -1,0 +1,204 @@
+/* Body styling */
+body {
+  background-color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden; 
+}
+
+
+/* Title styling */
+#level-title {
+  font-size: 2.8rem;  /* Increased font size */
+  color: #FEF2BF;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;  /* Center the title */
+}
+
+/* Centering container with buttons */
+.container {
+  width: 100%;
+  max-width: 700px;  /* Increased max width for larger buttons */
+  margin: 35px auto;
+  text-align: center;
+}
+
+/* Button styling */
+.btn {
+  margin: 20px;
+  display: inline-block;
+  height: 175px;  /* Increased height */
+  width: 175px;   /* Increased width */
+  border: 6px solid black;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Button pressed effect */
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* Game over effect */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Button colors */
+.red {
+  background-color: #FF595E;
+}
+
+.green {
+  background-color: #8AC926;
+}
+
+.blue {
+  background-color: #1982C4;
+}
+
+.yellow {
+  background-color: #FFCA3A;
+}
+.game-container{
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #02254A;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+
+}
+/* Home Screen Container */
+.home-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #02254A;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: #FEF2BF;
+}
+
+/* Home Screen Title */
+.home-container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+
+/* Game Description */
+.game-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.rule-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #02254A; /* Deep blue background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Slightly larger shadow for a more pronounced effect */
+  text-align: center;
+  color: #FEF2BF; /* Light yellow text color */
+}
+
+/* Rules Title */
+.rule-container h1 {
+  font-size: 3.5rem; /* Increased font size for better visibility */
+  margin-bottom: 20px; /* Reduced bottom margin */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Added shadow for text depth */
+}
+
+/* Instructions List */
+.instructions-list {
+  font-size: 1.3rem; /* Increased font size for better readability */
+  line-height: 1.6; /* Increased line height for better spacing */
+  margin-bottom: 30px; /* Increased margin below the list */
+  padding-left: 0; /* Removed padding for bullet visibility */
+  list-style-position: inside; /* Positions bullets inside the list items */
+}
+.instructions-list li {
+  margin-bottom: 10px; /* Increased margin between list items */
+}
+/* Back Button Styling */
+.start-btn {
+  font-family: 'Press Start 2P', cursive;
+  padding: 15px 30px;
+  background-color: #FEF2BF;
+  color: #011F3F;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  margin-top: 20px; /* Added margin to separate the button from the list */
+}
+
+.start-btn:hover {
+  background-color: #FFD700; /* Highlight color on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+  }
+
+  .instructions-title {
+    font-size: 1.5rem;
+  }
+
+  .start-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .btn {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+  }
+
+  #level-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Animation for button click */
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
